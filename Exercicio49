@@ -19,7 +19,7 @@ public class Main
 		    soma += i / j;
 		}
 		
-		System.out.println(soma);
+		System.out.println(\nsoma);
 		
 	}
 }
