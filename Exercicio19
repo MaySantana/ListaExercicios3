@@ -1,0 +1,55 @@
+//Extensão do exercicio anterior
+/May Santana, 2023
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+		Scanner scan = new Scanner(System.in);
+    	int a = 0, maior = 0, menor = 0;
+    	double soma = 0;
+    	boolean validacao = false;
+    	
+    	System.out.println("Informe um número:");
+    	int n = scan.nextInt();
+        
+        do {
+            
+            for (int i = 0; i < n; i++){
+                
+                System.out.println("Insira o valor " + (i + 1));
+                a = scan.nextInt();
+                
+                if (a >= 0 && a <= 1000){
+                    validacao = true;
+                    
+                    soma += a;
+                    
+                    if (i == 0){
+                        maior = a;
+                        menor = a;
+                    }
+                    
+                    if (a > maior){
+                        maior = a;
+                    }
+                    
+                    if (a < menor){
+                        menor = a;
+                    }
+                    
+                } else {
+                    System.out.println("Nota inválida, digite novamente");
+                }
+                
+            }
+            
+        } while (!validacao);
+        
+	
+	System.out.print("Maior: " + maior + " Menor: " + menor + " Soma: " + soma);
+	
+    }  
+}
