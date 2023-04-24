@@ -7,7 +7,7 @@ public class Main
 {
 	public static void main(String[] args) {
 	    
-		Scanner scan = new Scanner(System.in);
+	Scanner scan = new Scanner(System.in);
     	int a = 0, maior = 0, menor = 0;
     	double soma = 0;
     	
